@@ -78,7 +78,43 @@ header nav ul {
     display: flex;
     flex-wrap: wrap; 
     max-width: 25%;
+    text-align: right;
 }
+
+/*Hero Style*/
+.hero { 
+    background-image: url(../images/Charlotte-NC.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    height: 800px;
+}
+
+.hero-content { 
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    border: solid 3px #92CCCD; 
+    line-height: 1.2;
+    position: relative;
+    left: 600px;
+    bottom: 34px;
+    background-color: #00788C;
+}
+
+.hero h2 {
+    font-style:italic;
+    font-size: 35px;
+
+}
+/* Hero Style End */
+
+
+
 
 
 /*Footer / Contact Section Style*/
