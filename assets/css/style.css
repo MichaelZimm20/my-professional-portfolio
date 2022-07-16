@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body {
+    color: #405472;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*Header Section*/
+
+header { 
+    padding: 21px 90px;
+    background-color: #31343D;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header div {
+    background: #92CCCD;
+    position: absolute;
+    left: -22px;
+    top: 5px;
+    padding: 20px;
+    height: 50px;
+    width: 350px;
+
+
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:#31343D; 
+    padding: 1px 0 6px 26px;
+    position: relative;
+    top: -19px;
+    right: -6px;
+
+
+}
+
+header a {
+    text-decoration: none; 
+    color: #92CCCD;
+    border-bottom: 3px solid #92CCCD;
+    margin-left: 13px;
+
+}
+
+header nav ul li a {
+    padding: 4px 8px;
+    font-weight: lighter;
+    font-size: 20px;
+    position: relative;
+    left: 1300px; /*Come back to this and fix */
+    
+
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;   
+}
+
+
+/*Overall Title Style*/
+.primary-title {
+    font-size: 45px;
+    padding: 10px 20px 55px 85px;
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 25%;
+}
+
+
+/*Footer / Contact Section Style*/
+
+footer { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+
+
+.contact ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none; 
+   border-left: 4px solid;
+    
+    padding-left: 55px;
+
+}
+
+.contact a {
+    text-decoration: none;
+    color: #31343D;
+    font-size: 25px;
+    font-weight: bold;
+    display:flex;
+    padding: 40px 65px 55px 65px;
+}
+
+
+
+.contact ul li a {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
