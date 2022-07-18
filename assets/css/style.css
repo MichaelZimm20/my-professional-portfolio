@@ -1,3 +1,15 @@
+/*Global Syling*/
+:root {
+    --primary-color: #31343D;
+    --secondary-color: #92CCCD;
+    --tertiary-color: #1D1160;
+    --fourth-color:#83CDC0 ;
+    --fifth-color: #BA9653;
+    
+    
+
+}
+
 * {
     margin: 0;
     padding:0 ;
@@ -10,53 +22,76 @@ body {
 }
 
 
-/*Header Section*/
+/*Global Syling END*/
 
+
+
+
+/*Header Section*/
 header { 
-    padding: 21px 90px;
-    background-color: #31343D;
+    padding: 3px 21px 21px 21px;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 
-header div {
-    background: #92CCCD;
-    position: absolute;
+.heading {
+    background: var(--secondary-color);
+    position: relative;
     left: -22px;
     top: 5px;
-    padding: 20px;
+    padding: 5px;
     height: 50px;
     width: 350px;
 
 
 }
 
+header nav {
+    margin: 9px 50px 0 20px;
+    display: flex;
+}
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color:#31343D; 
+    color:var(--primary-color); 
     padding: 1px 0 6px 26px;
     position: relative;
-    top: -19px;
-    right: -6px;
-
+    top: -2px;
+    right: -44px;
+    margin: 0;
 
 }
 
 header a {
     text-decoration: none; 
-    color: #92CCCD;
-    border-bottom: 3px solid #92CCCD;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     margin-left: 13px;
+    
 
 }
+
 
 header nav ul li a {
     padding: 4px 8px;
     font-weight: lighter;
-    font-size: 20px;
-    position: relative;
+    font-size: 1.50vw;
+    text-shadow: 0 0 10px rgba(146, 204, 205, 0.5);
+    
+    
+    /*position: relative;
     left: 1300px; /*Come back to this and fix */
     
 
@@ -70,16 +105,16 @@ header nav ul {
     list-style: none;   
 }
 
-
-/*Overall Title Style*/
-.primary-title {
-    font-size: 45px;
-    padding: 10px 20px 55px 85px;
-    display: flex;
-    flex-wrap: wrap; 
-    max-width: 25%;
-    text-align: right;
+header nav ul li a:hover {
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
+    border-radius: 15px;
+    text-shadow: none;
 }
+/*Header Section END*/
+
+
+
 
 /*Hero Style*/
 .hero { 
@@ -94,25 +129,84 @@ header nav ul {
 }
 
 .hero-content { 
+    float: right;
     width: 35%;
-    text-align: right;
-    margin: 3.5%;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 88px;
     color: #fff;
-    border: solid 3px #92CCCD; 
-    line-height: 1.2;
-    position: relative;
-    left: 600px;
-    bottom: 34px;
-    background-color: #00788C;
+    border: solid 1px var(--fifth-color); 
+    line-height: 1.3;
+    padding: 5px; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero h2 {
+.hero h3 {
     font-style:italic;
-    font-size: 35px;
+    font-size: 24px;
+    display: inline;
 
 }
 /* Hero Style End */
 
+
+
+
+/*Section Style*/
+section, footer{
+    
+    padding: 20px 65px;
+    display: flex;
+    
+}
+
+.my-content {
+   
+    margin: 0 40px 0 40px;
+}
+
+/*Section Style END*/
+
+/*Overall Title Style*/
+.primary-title {
+    font-size: 45px;
+    padding-right: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 15%;
+    text-align: right;
+    border-right: 3px solid var(--primary-color);
+    margin: 0;
+    position: relative;
+   
+}
+/*Overall Title Style END*/
+
+/*About Me Section*/
+
+.personal-message {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    padding-left: 35px;
+    justify-content: center;
+    align-items: top;
+    width:75%;
+}
+
+
+/*About Me Section END*/
+
+
+
+
+
+/*MY WORK SECTION*/
+
+/*MY WORK SECTION END*/
 
 
 
@@ -122,14 +216,19 @@ header nav ul {
 footer { 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background: var(--primary-color);
+    color: var(--fourth-color);
+    padding: 5px;
 }
+    
 
 .contact {
 
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 75%;
+   
 }
 
 
@@ -137,19 +236,18 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    list-style: none; 
-   border-left: 4px solid;
-    
+    list-style: none;     
     padding-left: 55px;
+    text-align: center;
 
 }
 
 .contact a {
     text-decoration: none;
-    color: #31343D;
+    color: var(--primary-color);
     font-size: 25px;
     font-weight: bold;
-    display:flex;
+    display: flex;
     padding: 40px 65px 55px 65px;
 }
 
@@ -161,4 +259,17 @@ footer {
     justify-content: center;
     display: flex;
 }
+
+
+
+
+
+
+    
+   
+
+    
+    
+    
+    
 
