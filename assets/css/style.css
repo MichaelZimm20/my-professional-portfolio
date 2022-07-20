@@ -154,19 +154,17 @@ header nav ul li a:hover {
 
 
 
-/*Section Style*/
+/*Footer Style*/
 footer{
     
     padding: 20px 65px;
     display: flex;
     
 }
+/*Footer Style END*/
 
-.my-content {
-    display: flex;
-    padding: 15px 15px;
-    margin-left: 100px;
-}
+
+
 
 
 /*Section Style END*/
@@ -180,7 +178,21 @@ footer{
     justify-content: flex-end;
     width: 15%;
     text-align: right;
-    border-right: 3px solid var(--primary-color);
+    margin: 0;
+    position: relative;
+   
+}
+
+.secondary-title {
+    font-size: 45px;
+    padding-right: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 15%;
+    height: 100%;
+    text-align: right;
+    
     margin: 0;
     position: relative;
    
@@ -188,6 +200,14 @@ footer{
 /*Overall Title Style END*/
 
 
+/*Section Style*/
+.my-content {
+    display: flex;
+    padding: 15px 15px;
+    margin-left: 100px;
+   
+}
+/*Section Style end*/
 
 
 
@@ -202,14 +222,22 @@ footer{
     justify-content: center;
     align-items: top;
     width:85%;
+    border-left: 3px solid var(--primary-color);
 }
 
+.personal-img{
+    flex:1 12%;
+}
 .my-headshot {
     width: 150px;
     height: 199px;
-    margin-left: 30px;
-    border-radius: 10% / 50%;
-    
+    border-radius: 10% / 50%;     
+}
+
+.mymessage{
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*About Me Section END*/
 
@@ -222,30 +250,203 @@ footer{
 
 
 /*MY WORK SECTION*/
-.projects{
-    width: 100%;
+
+.flex-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.projects {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    flex: 1 80%;
+    border-left: 3px solid var(--primary-color);
+}
+
+
+
+.main-project{
+    width: 73%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
-
-}
-
-.project{
     background-image: url("../images/run-buddy\ screenshot.png");
     background-size: cover;
     background-position: center;
-    width:100%;
-    height: 500px;
-
+    border: 3px solid var(--fifth-color);
+    height: 400px;
+    padding: 10px;
+    position:relative;
+    
 }
+
+
 
 .project-title {
     background-color: var(--fifth-color);
     color:#fff;
-    width: 10%;
+    width: 35%;
+    height: 15%;
+    padding: 8px 3px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+.overlay-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 75%;
+}
+
+/*.overlay-link:hover::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 100%;
+}*/
+
+
+.main-overalay {
+    width: 70%;
+    height: 400px; 
+    opacity: 100%;
+}
+
+
+
+
+/*.main-overalay:hover::after {
+    background-color:rgba(61, 61, 61, 0.25);
+    width: 70%;
+    height: 400px;
+    display:none;
+}*/
+
+
+
+
+
+
+
+/*Other Projects overall style*/
+.other-projects {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex:1 80%;
+    padding: 5px;
+    margin:5px;
+}
+
+
+.project-title2 {
+    background-color: var(--fifth-color);
+    color: #fff;
+    width: 42%;
+    height: 30%;
+    padding: 2px 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+}
+
+
+    /* Second Project: Horiseon */
+.horiseon-project{
+    width: 36%;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url("../images/horiseon\ screenshot.png");
+    background-size: cover;
+    background-position: top;
+    border: 3px solid var(--fifth-color);
+    height: 150px;
+    padding: 10px;
+    position:relative;
     
 }
+    /* Second Project: Horiseon END */
+
+
+    /* Third Project:  */
+.third-project{
+    width: 36%;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../images/horiseon\ screenshot.png");
+    background-size: cover;
+    background-position: top;
+    border: 3px solid var(--fifth-color);
+    height: 150px;
+    padding: 10px;
+    position:relative;
+    
+}
+    /* Third Project:  END */
+
+
+    /* Fourth Project:  */
+.fourth-project{
+    width: 36%;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../images/horiseon\ screenshot.png");
+    background-size: cover;
+    background-position: top;
+    border: 3px solid var(--fifth-color);
+    height: 150px;
+    padding: 10px;
+    position:relative;
+   
+}
+     /* Fourth Project:  END*/
+
+
+
+    /* fifth Project:  */
+.firth-project{
+    width: 36%;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("../images/horiseon\ screenshot.png");
+    background-size: cover;
+    background-position: top;
+    border: 3px solid var(--fifth-color);
+    height: 150px;
+    padding: 10px;
+    position:relative;
+    
+}
+    /* fifth Project:  END*/
+
 /*MY WORK SECTION END*/
 
 
@@ -267,6 +468,7 @@ footer {
     background: var(--primary-color);
     color: var(--fourth-color);
     padding: 5px;
+    
 }
     
 
@@ -275,6 +477,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-left: 3px solid var(--primary-color);
    
 }
 
