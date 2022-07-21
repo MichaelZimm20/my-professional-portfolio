@@ -371,7 +371,7 @@ main {
 
     /*this will be applied to any screen smaller than 980px*/
 
-    header {
+    /* header {
         padding-bottom: 0;
         position: relative;
 
@@ -451,7 +451,7 @@ main {
     .firth-project {
         width: 39%;
     }
-
+ */
 
 }
 
@@ -462,7 +462,7 @@ main {
 
     /*this will be applied to any screen between than 768px and 575pxpx*/
 
-    header {
+    /* header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -577,13 +577,13 @@ main {
     }
 
 
-}
+} */
 
 
 @media screen and (max-width: 575px) {
 
     /*this will be applied to any screen smaller than 575px*/
-    header {
+    /* header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -707,4 +707,4 @@ main {
     }
 
 
-}
+} */
