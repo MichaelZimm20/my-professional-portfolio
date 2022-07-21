@@ -347,37 +347,17 @@ main {
 
 /*Contact Section Style*/
 
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: var(--primary-color);
-    color: var(--fourth-color);
-    padding: 5px;
-
-}
-
-
 .contact {
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-left: 3px solid var(--primary-color);
+    align-items: center;
+    
 
 }
 
 
-.contact ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 55px;
-    text-align: center;
-
-}
 
 .contact a {
     text-decoration: none;
@@ -385,17 +365,9 @@ footer {
     font-size: 25px;
     font-weight: bold;
     display: flex;
-    padding: 40px 65px 55px 65px;
 }
 
 
-
-.contact ul li a {
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
 
 
 
