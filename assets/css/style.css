@@ -29,7 +29,7 @@ body {
 
 /*Header Section*/
 header {
-    padding: 3px 21px 21px 21px;
+    padding: 3px 21px 12px 21px;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ header a {
     text-decoration: none;
     color: var(--secondary-color);
     margin-left: 13px;
-    font-size: 10vw;
+    font-size: 5vw;
 
 
 }
@@ -117,19 +117,21 @@ header nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    height: 400px;
+    align-items: stretch;
+    height: 300px;
+    flex: 0 0 77%;
+    
 }
 
 .hero-content {
-    float: right;
-    width: 35%;
+    width: 25%;
     text-align: center;
     position: absolute;
     right: 20px;
     top: 88px;
     color: #fff;
     border: solid 1px var(--fifth-color);
+    font-size: 1vw;
     line-height: 1.3;
     padding: 5px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
