@@ -59,7 +59,8 @@ header {
 }
 
 header nav {
-    margin: 9px 50px 0 20px;
+    margin: 20px;
+    margin-bottom: 0;
     display: flex;
 }
 
@@ -78,40 +79,30 @@ header h1 {
 header a {
     text-decoration: none;
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
     margin-left: 13px;
+    font-size: 10vw;
 
 
 }
 
 
-header nav ul li a {
+header nav a {
     padding: 4px 8px;
     font-weight: lighter;
     font-size: 1.50vw;
-    text-shadow: 0 0 10px rgba(146, 204, 205, 0.5);
-
-
-    /*position: relative;
-    left: 1300px; /*Come back to this and fix */
-
-
+    text-shadow: 0 0 10px rgba(146, 204, 205, 0.3);
+    background: linear-gradient(to left, var(--primary-color) 50%, var(--fourth-color) 40%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
 
-header nav ul li a:hover {
-    background-color: var(--fourth-color);
+header nav a:hover {
+    background-position: left;
     color: var(--fifth-color);
-    border-radius: 15px;
-    text-shadow: none;
+        
 }
+
 
 /*Header Section END*/
 
