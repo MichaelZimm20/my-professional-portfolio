@@ -115,25 +115,23 @@ header nav a:hover {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: stretch;
     height: 300px;
     flex: 0 0 77%;
-    
+    align-items: flex-start;
 }
 
 .hero-content {
     width: 25%;
     text-align: center;
-    position: absolute;
-    right: 20px;
-    top: 88px;
     color: #fff;
     border: solid 1px var(--fifth-color);
     font-size: 1vw;
     line-height: 1.3;
     padding: 5px;
+    margin: 24px;
+    max-height: 50px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -399,14 +397,21 @@ main {
 
    
     .hero {
-        width: 100%;
-        height: 300px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
     }
 
     .hero-content {
         text-align: center;
-        top: 140px;
-        font-size: 1.4vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2vw;
+        padding: 1px;
 }
 
     .flex-container{
@@ -428,6 +433,9 @@ main {
         width: 100%;
     }
 
+    .contact a {
+        padding: 5px 15px ;
+    }
 } 
  
 
@@ -440,122 +448,27 @@ main {
 
     /*this will be applied to any screen between than 768px and 575pxpx*/
 
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 110%;
-        padding-bottom: 10px;
-
-
-    }
-
-    .heading {
-        position: relative;
-        width: 350px;
-        padding: 3px 0 0 0;
-    }
-
-    header h1 {
-        width: 100%;
-        padding: 0 0 0 26px;
-
-    }
-
-    header nav ul {
-        display: flex;
-        margin: 0;
-
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-        padding: 3px 10px 3px 0;
-        margin: 0;
-        margin-bottom: 15px;
-        border-bottom: none;
-    }
-
-    footer h2,
-    footer div {
-        text-align: center;
-        width: 100%;
-    }
-
     .hero {
         width: 100%;
-        height: 200px;
-    }
-
-    .hero h3 {
-        font-size: 15px;
+        height: 250px;
+        display: flex; 
+        justify-content: flex-end;
     }
 
     .hero-content {
         text-align: center;
-        position: absolute;
-        top: 110px;
-        right: 10px;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+       
+        font-size: 1.2vw;
+}
+    .mymessage p{
+        font-size: 2.5vw;
+    }
+    
+    .contact a {
+        font-size: 2.5vw;
     }
 
-
-    .primary-title {
-        font-size: 25px;
-    }
-
-    .personal-message {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .personal-img {
-        display: flex;
-        justify-content: center;
-        ;
-    }
-
-    .my-content {
-        width: 85%;
-        margin: auto;
-
-    }
-
-    .projects {
-        width: 100%;
-    }
-
-    .main-project {
-        width: 90%;
-        height: 200px;
-    }
-
-    .other-projects {
-        width: 110%;
-        padding: 0;
-        margin: 0;
-        height: 100px;
-    }
-
-    .contact ul li a {
-        align-items: center;
-        justify-content: space-around;
-        display: flex;
-        padding: 5px;
-        font-size: 20px;
-    }
-
-    .horiseon-project,
-    .third-project,
-    .fourth-project,
-    .firth-project {
-        width: 39%;
-    }
-
-
-} */
+} 
 
 
 @media screen and (max-width: 575px) {
