@@ -80,8 +80,6 @@ header a {
     text-decoration: none;
     color: var(--secondary-color);
     margin-left: 13px;
-    font-size: 5vw;
-
 
 }
 
@@ -100,7 +98,7 @@ header nav a {
 header nav a:hover {
     background-position: left;
     color: var(--fifth-color);
-        
+
 }
 
 
@@ -181,7 +179,7 @@ main {
     line-height: 1.1;
 }
 
-.flex-container > div {
+.flex-container>div {
     flex: 0 0 77%;
 }
 
@@ -192,7 +190,7 @@ main {
     display: flex;
     align-items: top;
 
-   
+
 }
 
 .personal-img {
@@ -243,15 +241,16 @@ main {
     min-height: 350px;
     flex-basis: 100%;
 }
+
 .main-overlay:first-child div {
-    
+
     position: relative;
     top: 300px;
     left: -1px;
     width: 145px;
     background-color: var(--fifth-color);
     font-size: 12px;
-    
+
 }
 
 .main-overlay:hover {
@@ -265,7 +264,7 @@ main {
     width: 145px;
     background-color: var(--fifth-color);
     font-size: 12px;
-    
+
 
 }
 
@@ -284,9 +283,10 @@ main {
     background-image: url("../images/horiseon\ screenshot.png");
     background-size: cover;
     background-position: top;
-   
+
 
 }
+
 /* Horiseon Project END */
 
 
@@ -296,31 +296,33 @@ main {
     background-image: url("../images/code\ picture.jpg");
     background-size: cover;
     background-position: top;
-   
-} 
+
+}
+
 /* Calculator Project END */
 
 
 
 /*LED Wall Project */
 .led-project {
-     background-image: url("../images/LED-Wall-Benefits.png");
+    background-image: url("../images/LED-Wall-Benefits.png");
     background-size: cover;
     background-position: top;
     opacity: 75%;
-   
 
-} 
+
+}
+
 /*LED Wall Project END*/
 
 
 /* Pastel Project */
 .pastel-project {
     background-image: url("../images/pastel\ colors.jpg");
-    background-size: cover; 
+    background-size: cover;
     background-position: top;
-    
-} 
+
+}
 
 /* Pastel Project END*/
 
@@ -344,7 +346,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+
 
 }
 
@@ -376,32 +378,33 @@ main {
         width: 100%;
 
     }
-    
-    .heading{
+
+    .heading {
         width: 200%;
         position: relative;
 
     }
-  .heading h1 {
-    justify-content: center;
-    align-items: center;
-}
 
-     header nav a {
-        
-       justify-content: center;
-       font-size: 30px;
-       padding: 10px;
+    .heading h1 {
+        justify-content: center;
+        align-items: center;
+    }
 
-    } 
+    header nav a {
 
-   
+        justify-content: center;
+        font-size: 30px;
+        padding: 10px;
+
+    }
+
+
     .hero {
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
         align-items: flex-start;
-        
+
     }
 
     .hero-content {
@@ -412,16 +415,17 @@ main {
         align-items: center;
         font-size: 1.2vw;
         padding: 1px;
-}
+    }
 
-    .flex-container{
+    .flex-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex: 0 0 100%;
     }
-    .flex-container h2{
-        border-bottom:3px solid var(--primary-color);
+
+    .flex-container h2 {
+        border-bottom: 3px solid var(--primary-color);
         border-right: none;
         justify-content: center;
         align-items: center;
@@ -434,10 +438,10 @@ main {
     }
 
     .contact a {
-        padding: 5px 15px ;
+        padding: 5px 15px;
     }
-} 
- 
+}
+
 
 
 
@@ -451,151 +455,111 @@ main {
     .hero {
         width: 100%;
         height: 250px;
-        display: flex; 
+        display: flex;
         justify-content: flex-end;
     }
 
     .hero-content {
         text-align: center;
-       
+
         font-size: 1.2vw;
-}
-    .mymessage p{
-        font-size: 2.5vw;
-    }
-    
-    .contact a {
-        font-size: 2.5vw;
     }
 
-} 
+    .mymessage {
+        font-size: 2.5vw;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact a {
+        font-size: 2.4vw;
+    }
+
+}
 
 
 @media screen and (max-width: 575px) {
 
     /*this will be applied to any screen smaller than 575px*/
-    /* header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 110%;
-        padding-bottom: 10px;
+    header {
+        padding-bottom: 0;
+        justify-content: center;
 
+        align-content: stretch;
 
     }
 
     .heading {
-        position: relative;
-        width: 210px;
-        padding: 5px;
-        height: 39px;
+        width: 200%;
+        align-content: stretch;
 
     }
 
-    header h1 {
-        width: 100%;
-        padding: 0 0 0 26px;
-        font-size: 25px;
-        right: 20px;
-
-    }
-
-    header nav ul {
-        display: flex;
-
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-        margin: 0;
-        margin-bottom: 15px;
-        border-bottom: none;
-        position: relative;
+    .heading h1 {
         justify-content: center;
         align-items: center;
     }
 
-    footer h2,
-    footer div {
-        text-align: center;
-        width: 100%;
+    header nav a {
+
+        justify-content: center;
+        font-size: 4vw;
+
+        padding: 3px auto;
+        margin: auto;
+
     }
 
     .hero {
         width: 100%;
-        height: 200px;
-    }
-
-    .hero h3 {
-        font-size: 12px;
-    }
-
-    .hero h4 {
-        font-size: 10px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .hero-content {
         text-align: center;
-        position: absolute;
-        top: 100px;
-        right: 10px;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        width: 100%;
+        font-size: 2.5vw;
+        margin: 0 auto;
     }
 
+    .flex-container {
 
-    .primary-title {
-        font-size: 20px;
+        margin: 0 auto;
     }
 
     .personal-message {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
         align-items: center;
     }
 
     .personal-img {
         display: flex;
         justify-content: center;
-        ;
+        padding-bottom: 15px;
     }
 
-    .my-content {
-        width: 85%;
-        margin: auto;
-
+    .mymessage {
+        line-height: 1.5;
+        font-size: 3vw;
     }
 
-    .projects {
-        width: 100%;
-    }
-
-    .main-project {
-        width: 90%;
-        height: 200px;
-    }
-
-    .other-projects {
-        width: 110%;
-        padding: 0;
-        margin: 0;
-        height: 100px;
-    }
-
-    .contact ul li a {
-        align-items: center;
-        justify-content: space-around;
+    .contact a {
         display: flex;
-        padding: 5px;
-        font-size: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 3.5vw;
+        padding-bottom: 15px;
     }
 
-    .horiseon-project,
-    .third-project,
-    .fourth-project,
-    .firth-project {
-        width: 39%;
-    }
-
-
-} */
+}
