@@ -371,89 +371,67 @@ main {
 
     /*this will be applied to any screen smaller than 980px*/
 
-    /* header {
+    header {
         padding-bottom: 0;
-        position: relative;
-
-    }
-
-    .heading {
-        position: relative;
-        width: 350px;
-    }
-
-    header h1 {
-        width: 100%;
-
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
         justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-    }
-
-    footer h2,
-    footer div {
-        text-align: center;
+        position: relative;
         width: 100%;
-    }
 
+    }
+    
+    .heading{
+        width: 200%;
+        position: relative;
+
+    }
+  .heading h1 {
+    justify-content: center;
+    align-items: center;
+}
+
+     header nav a {
+        
+       justify-content: center;
+       font-size: 30px;
+       padding: 10px;
+
+    } 
+
+   
     .hero {
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
 
     .hero-content {
         text-align: center;
+        top: 140px;
+        font-size: 1.4vw;
+}
+
+    .flex-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100%;
     }
-
-
-    .primary-title {
-        width: 20%;
-    }
-
-    .my-content {
-        width: 90%;
-        margin: auto;
-
+    .flex-container h2{
+        border-bottom:3px solid var(--primary-color);
+        border-right: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        margin: 20px auto;
     }
 
     .projects {
         width: 100%;
     }
 
-    .main-project {
-        width: 90%;
-    }
+} 
+ 
 
-    .other-projects {
-        width: 110%;
-        padding: 0;
-        margin: 0;
-    }
 
-    .contact ul li a {
-        align-items: center;
-        justify-content: space-around;
-        display: flex;
-        padding: 5px;
-        font-size: 20px;
-    }
-
-    .horiseon-project,
-    .third-project,
-    .fourth-project,
-    .firth-project {
-        width: 39%;
-    }
- */
-
-}
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
