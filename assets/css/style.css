@@ -125,7 +125,7 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap:wrap;
     align-items: flex-start;
-    height: 500px;
+    height: 400px;
 }
 
 .hero-content { 
@@ -154,14 +154,7 @@ header nav ul li a:hover {
 
 
 
-/*Footer Style*/
-footer{
-    
-    padding: 20px 65px;
-    display: flex;
-    
-}
-/*Footer Style END*/
+
 
 
 
@@ -464,6 +457,7 @@ footer{
 
 
 /*Footer / Contact Section Style*/
+
 
 footer { 
     display: flex;
