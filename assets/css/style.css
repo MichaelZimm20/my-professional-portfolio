@@ -3,16 +3,16 @@
     --primary-color: #31343D;
     --secondary-color: #92CCCD;
     --tertiary-color: #1D1160;
-    --fourth-color:#83CDC0 ;
+    --fourth-color: #83CDC0;
     --fifth-color: #BA9653;
-    
-    
+
+
 
 }
 
 * {
     margin: 0;
-    padding:0 ;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body {
 
 
 /*Header Section*/
-header { 
+header {
     padding: 3px 21px 21px 21px;
     background-color: var(--primary-color);
     display: flex;
@@ -38,7 +38,7 @@ header {
     position: sticky;
     top: 0;
 
-    
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -62,10 +62,11 @@ header nav {
     margin: 9px 50px 0 20px;
     display: flex;
 }
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color:var(--primary-color); 
+    color: var(--primary-color);
     padding: 1px 0 6px 26px;
     position: relative;
     top: -2px;
@@ -75,11 +76,11 @@ header h1 {
 }
 
 header a {
-    text-decoration: none; 
+    text-decoration: none;
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
     margin-left: 13px;
-    
+
 
 }
 
@@ -89,11 +90,11 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.50vw;
     text-shadow: 0 0 10px rgba(146, 204, 205, 0.5);
-    
-    
+
+
     /*position: relative;
     left: 1300px; /*Come back to this and fix */
-    
+
 
 }
 
@@ -102,7 +103,7 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;   
+    list-style: none;
 }
 
 header nav ul li a:hover {
@@ -111,24 +112,25 @@ header nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
+
 /*Header Section END*/
 
 
 
 
 /*Hero Style*/
-.hero { 
+.hero {
     background-image: url(../images/Charlotte-NC.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
     height: 400px;
 }
 
-.hero-content { 
+.hero-content {
     float: right;
     width: 35%;
     text-align: center;
@@ -136,19 +138,21 @@ header nav ul li a:hover {
     right: 20px;
     top: 88px;
     color: #fff;
-    border: solid 1px var(--fifth-color); 
+    border: solid 1px var(--fifth-color);
     line-height: 1.3;
-    padding: 5px; 
+    padding: 5px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .hero h3 {
-    font-style:italic;
+    font-style: italic;
     font-size: 24px;
     display: inline;
 
 }
+
 /* Hero Style End */
 
 
@@ -157,87 +161,10 @@ header nav ul li a:hover {
 
 
 
-
-
-
-/*Section Style END*/
-
-/*Overall Title Style*/
-.primary-title {
-    font-size: 45px;
-    padding-right: 20px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 15%;
-    text-align: right;
-    margin: 0;
-    position: relative;
-   
+main {
+    max-width: 88%;
+    margin: 5px auto 10px auto;
 }
-
-.secondary-title {
-    font-size: 45px;
-    padding-right: 20px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 15%;
-    height: 100%;
-    text-align: right;
-    
-    margin: 0;
-    position: relative;
-   
-}
-/*Overall Title Style END*/
-
-
-/*Section Style*/
-.my-content {
-    display: flex;
-    padding: 15px 15px;
-    margin-left: 100px;
-   
-}
-/*Section Style end*/
-
-
-
-
-/*About Me Section*/
-
-.personal-message {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    padding-left: 35px;
-    justify-content: center;
-    align-items: top;
-    width:85%;
-    border-left: 3px solid var(--primary-color);
-}
-
-.personal-img{
-    flex:1 12%;
-}
-.my-headshot {
-    width: 150px;
-    height: 199px;
-    border-radius: 10% / 50%;     
-}
-
-.mymessage{
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-}
-/*About Me Section END*/
-
-
-
-
-
 
 
 
@@ -245,210 +172,171 @@ header nav ul li a:hover {
 /*MY WORK SECTION*/
 
 .flex-container {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+}
 
+.flex-container h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 3px solid var(--primary-color);
+    font-size: 4vw;
+    line-height: 1.1;
+}
 
+.flex-container > div {
+    flex: 0 0 77%;
 }
 
 
+/*About Me Section*/
+
+.personal-message {
+    display: flex;
+    align-items: top;
+
+   
+}
+
+.personal-img {
+    flex: 1 15%;
+    padding-right: 20px;
+}
+
+.my-headshot {
+    width: 150px;
+    height: 199px;
+    border-radius: 10% / 50%;
+}
+
+.mymessage {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*About Me Section END*/
+
+
+
+/*Work Section Start*/
 .projects {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    flex: 1 80%;
-    border-left: 3px solid var(--primary-color);
+    justify-content: center;
+}
+
+.main-overlay {
+    border: 3px solid var(--fifth-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 
+.main-overlay:first-child {
+    min-height: 350px;
+    flex-basis: 100%;
+}
+.main-overlay:first-child div {
+    
+    position: relative;
+    top: 300px;
+    left: -1px;
+    width: 145px;
+    background-color: var(--fifth-color);
+    font-size: 12px;
+    
+}
 
-.main-project{
-    width: 73%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.main-overlay:hover {
+    opacity: 50%;
+}
+
+.main-overlay:not(:first-child) div {
+    position: relative;
+    top: 110px;
+    left: -1px;
+    width: 145px;
+    background-color: var(--fifth-color);
+    font-size: 12px;
+    
+
+}
+
+.main-project {
+
     background-image: url("../images/run-buddy\ screenshot.png");
     background-size: cover;
     background-position: center;
-    border: 3px solid var(--fifth-color);
-    height: 400px;
-    padding: 10px;
-    position:relative;
-    
+
 }
 
 
 
-.project-title {
-    background-color: var(--fifth-color);
-    color:#fff;
-    width: 35%;
-    height: 15%;
-    padding: 8px 3px;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-}
-.overlay-link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    opacity: 75%;
-}
-
-/*.overlay-link:hover:: {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    opacity: 100%;
-}*/
-
-
-
-
-
-
-
-
-
-
-/*Other Projects overall style*/
-.other-projects {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    flex:1 80%;
-    padding: 5px;
-    margin:5px;
-}
-
-
-.project-title2 {
-    background-color: var(--fifth-color);
-    color: #fff;
-    width: 42%;
-    height: 30%;
-    padding: 2px 0;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    bottom: 6px;
-    left: 0;
-}
-
-
-    /* Second Project: Horiseon */
-.horiseon-project{
-    width: 36%;
-    margin: 10px 10px;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; */
+/* Horiseon Project */
+.horiseon-project {
     background-image: url("../images/horiseon\ screenshot.png");
     background-size: cover;
     background-position: top;
-    border: 3px solid var(--fifth-color);
-    height: 150px;
-    padding: 10px;
-    position:relative;
-    
-}
-    /* Second Project: Horiseon END */
-
-
-    /* Third Project:  */
-.third-project{
-    width: 36%;
-    margin: 10px 10px;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    background-image: url("../images/horiseon\ screenshot.png");
-    background-size: cover;
-    background-position: top;
-    border: 3px solid var(--fifth-color);
-    height: 150px;
-    padding: 10px;
-    position:relative;
-    
-}
-    /* Third Project:  END */
-
-
-    /* Fourth Project:  */
-.fourth-project{
-    width: 36%;
-    margin: 0 10px;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    background-image: url("../images/horiseon\ screenshot.png");
-    background-size: cover;
-    background-position: top;
-    border: 3px solid var(--fifth-color);
-    height: 150px;
-    padding: 10px;
-    position:relative;
    
+
 }
-     /* Fourth Project:  END*/
+/* Horiseon Project END */
 
 
 
-    /* fifth Project:  */
-.firth-project{
-    width: 36%;
-    margin: 0 10px;
-    /*display: flex;*/
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
-    background-image: url("../images/horiseon\ screenshot.png");
+/* Calculator Project */
+.calc-project {
+    background-image: url("../images/code\ picture.jpg");
     background-size: cover;
     background-position: top;
-    border: 3px solid var(--fifth-color);
-    height: 150px;
-    padding: 10px;
-    position:relative;
+   
+} 
+/* Calculator Project END */
+
+
+
+/*LED Wall Project */
+.led-project {
+     background-image: url("../images/LED-Wall-Benefits.png");
+    background-size: cover;
+    background-position: top;
+    opacity: 75%;
+   
+
+} 
+/*LED Wall Project END*/
+
+
+/* Pastel Project */
+.pastel-project {
+    background-image: url("../images/pastel\ colors.jpg");
+    background-size: cover; 
+    background-position: top;
     
-}
-    /* fifth Project:  END*/
+} 
+
+/* Pastel Project END*/
 
 /*MY WORK SECTION END*/
 
 
 
-.main-overlay {
-    width: 70%;
-    min-height: 150px; 
-    max-height: 150px; 
-    flex-basis: calc(50% - 1em);
-    display: flex;
-    align-items: flex-end;
-    /*opacity: 100%;*/
-}
-
-
-
-
-.main-overlay:hover {
-    background-color:rgba(0, 0, 0, 0.5);
-  /*  width: 70%;
-    height: 400px;
-    display:none;*/
-}
 
 
 
@@ -456,19 +344,20 @@ header nav ul li a:hover {
 
 
 
-/*Footer / Contact Section Style*/
+
+/*Contact Section Style*/
 
 
-footer { 
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: var(--primary-color);
     color: var(--fourth-color);
     padding: 5px;
-    
+
 }
-    
+
 
 .contact {
 
@@ -476,7 +365,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     border-left: 3px solid var(--primary-color);
-   
+
 }
 
 
@@ -484,7 +373,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    list-style: none;     
+    list-style: none;
     padding-left: 55px;
     text-align: center;
 
@@ -514,25 +403,25 @@ footer {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
-    
+
     /*this will be applied to any screen smaller than 980px*/
-    
+
     header {
         padding-bottom: 0;
         position: relative;
-                
+
     }
- 
-    .heading { 
+
+    .heading {
         position: relative;
         width: 350px;
     }
 
     header h1 {
         width: 100%;
-    
+
     }
-    
+
     header nav ul {
         margin-top: 20px;
         width: 100%;
@@ -543,7 +432,8 @@ footer {
         font-size: 20px;
     }
 
-    footer h2, footer div {
+    footer h2,
+    footer div {
         text-align: center;
         width: 100%;
     }
@@ -553,26 +443,26 @@ footer {
         height: 400px;
     }
 
-    .hero-content{
+    .hero-content {
         text-align: center;
     }
 
-   
+
     .primary-title {
         width: 20%;
     }
 
     .my-content {
-        width:90%;
+        width: 90%;
         margin: auto;
-        
+
     }
 
-    .projects { 
+    .projects {
         width: 100%;
     }
 
-    .main-project { 
+    .main-project {
         width: 90%;
     }
 
@@ -590,31 +480,34 @@ footer {
         font-size: 20px;
     }
 
-    .horiseon-project, .third-project, .fourth-project, .firth-project {
+    .horiseon-project,
+    .third-project,
+    .fourth-project,
+    .firth-project {
         width: 39%;
     }
 
 
 }
-   
+
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 
 @media screen and (max-width: 768px) {
 
     /*this will be applied to any screen between than 768px and 575pxpx*/
-    
+
     header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width:110%;
+        width: 110%;
         padding-bottom: 10px;
 
-                
+
     }
- 
-    .heading { 
+
+    .heading {
         position: relative;
         width: 350px;
         padding: 3px 0 0 0;
@@ -623,13 +516,13 @@ footer {
     header h1 {
         width: 100%;
         padding: 0 0 0 26px;
-    
+
     }
-    
+
     header nav ul {
         display: flex;
         margin: 0;
-       
+
     }
 
     header nav ul li a {
@@ -640,7 +533,8 @@ footer {
         border-bottom: none;
     }
 
-    footer h2, footer div {
+    footer h2,
+    footer div {
         text-align: center;
         width: 100%;
     }
@@ -654,7 +548,7 @@ footer {
         font-size: 15px;
     }
 
-    .hero-content{
+    .hero-content {
         text-align: center;
         position: absolute;
         top: 110px;
@@ -663,32 +557,34 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
-   
+
     .primary-title {
         font-size: 25px;
     }
-    .personal-message  {
+
+    .personal-message {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .personal-img {
-    display: flex;
-    justify-content: center;;
-    }
-    
-    .my-content {
-        width:85%;
-        margin: auto;
-        
+        display: flex;
+        justify-content: center;
+        ;
     }
 
-    .projects { 
+    .my-content {
+        width: 85%;
+        margin: auto;
+
+    }
+
+    .projects {
         width: 100%;
     }
 
-    .main-project { 
+    .main-project {
         width: 90%;
         height: 200px;
     }
@@ -708,12 +604,15 @@ footer {
         font-size: 20px;
     }
 
-    .horiseon-project, .third-project, .fourth-project, .firth-project {
+    .horiseon-project,
+    .third-project,
+    .fourth-project,
+    .firth-project {
         width: 39%;
     }
 
 
-}  
+}
 
 
 @media screen and (max-width: 575px) {
@@ -723,18 +622,18 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width:110%;
+        width: 110%;
         padding-bottom: 10px;
 
-                
+
     }
- 
-    .heading { 
+
+    .heading {
         position: relative;
         width: 210px;
-        padding: 5px ;
+        padding: 5px;
         height: 39px;
-        
+
     }
 
     header h1 {
@@ -742,12 +641,12 @@ footer {
         padding: 0 0 0 26px;
         font-size: 25px;
         right: 20px;
-    
+
     }
-    
+
     header nav ul {
         display: flex;
-      
+
     }
 
     header nav ul li a {
@@ -760,7 +659,8 @@ footer {
         align-items: center;
     }
 
-    footer h2, footer div {
+    footer h2,
+    footer div {
         text-align: center;
         width: 100%;
     }
@@ -778,7 +678,7 @@ footer {
         font-size: 10px;
     }
 
-    .hero-content{
+    .hero-content {
         text-align: center;
         position: absolute;
         top: 100px;
@@ -787,32 +687,34 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
-   
+
     .primary-title {
         font-size: 20px;
     }
-    .personal-message  {
+
+    .personal-message {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .personal-img {
-    display: flex;
-    justify-content: center;;
-    }
-    
-    .my-content {
-        width:85%;
-        margin: auto;
-        
+        display: flex;
+        justify-content: center;
+        ;
     }
 
-    .projects { 
+    .my-content {
+        width: 85%;
+        margin: auto;
+
+    }
+
+    .projects {
         width: 100%;
     }
 
-    .main-project { 
+    .main-project {
         width: 90%;
         height: 200px;
     }
@@ -832,13 +734,12 @@ footer {
         font-size: 20px;
     }
 
-    .horiseon-project, .third-project, .fourth-project, .firth-project {
+    .horiseon-project,
+    .third-project,
+    .fourth-project,
+    .firth-project {
         width: 39%;
     }
 
-   
-}
-    
-    
-    
 
+}
