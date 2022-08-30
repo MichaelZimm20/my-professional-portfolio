@@ -265,7 +265,7 @@ main {
     position: relative;
     top: 110px;
     left: -1px;
-    width: 145px;
+    width: 200px;
     background-color: var(--fifth-color);
     font-size: 12px;
 
@@ -295,15 +295,15 @@ main {
 
 
 
-/* Calculator Project */
+/* Date Night Project Project */
 .calc-project {
-    background-image: url("../images/code\ picture.jpg");
+    background-image: url("../images/Untitled.jpg");
     background-size: cover;
     background-position: top;
 
 }
 
-/* Calculator Project END */
+/* Date Night Project Project END */
 
 
 
