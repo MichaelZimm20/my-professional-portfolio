@@ -72,8 +72,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ![My Professional Portfolio screenshots](./assets/images/main-section1.png "Top Page View") 
 <br/><br/><br/><br/>
 
-![My Professional Portfolio screenshots](./assets/images/main-section2.png "Middle Page View") 
+![My Professional Portfolio screenshots](./assets/images/Picture1.png "Middle Page View") 
 <br/><br/><br/><br/>
 
-![My Professional Portfolio screenshots](./assets/images/main-section3.png "Bottom Page View and Footer") 
+![My Professional Portfolio screenshots](./assets/images/Picture2.png "Bottom Page View and Footer") 
 <br/><br/><br/><br/>
