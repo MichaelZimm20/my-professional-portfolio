@@ -308,8 +308,8 @@ main {
 
 
 /*LED Wall Project */
-.led-project {
-    background-image: url("../images/LED-Wall-Benefits.png");
+.world-project {
+    background-image: url("../images/around\ the\ world.png");
     background-size: cover;
     background-position: top;
     opacity: 75%;
